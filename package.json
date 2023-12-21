@@ -3,5 +3,9 @@
     "express": "^4.18.2",
     "hbs": "^4.2.0",
     "path": "^0.12.7"
-  }
+  },
+  "script":{
+      "start": "node src/server.js",
+    },
+
 }
