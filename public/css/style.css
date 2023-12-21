@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&family=Tilt+Prism&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-bg-color: #2874f0;
+}
+.progress {
+  background: rgb(78, 32, 232);
+  height: 3px;
+  animation: load 1s ease-in-out 1;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes load {
+  0% {
+    width: 0px;
+    background: red;
+  }
+  50% {
+    width: 90vw;
+    background: red;
+  }
+  100% {
+    width: 100vw;
+    background: rgb(78, 32, 232);
+  }
+}
+header {
+  height: 58px;
+  background: black;
+  /* border: 2px solid red; */
+  font-family: "Lato", sans-serif;
+  background: var(--main-bg-color);
+}
+nav {
+  display: flex;
+}
+nav ul {
+  height: 58px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  padding: 23px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(5, 5, 8);
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  display: flex;
+  align-items: center;
+  width: 88px;
+  padding: 0 25px;
+}
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  width: 493px;
+  height: 27px;
+  border-radius: 5px;
+  margin: 0 16px 0 56px;
+  padding: 0px 12px;
+}
+.btn {
+  font-family: "Lato", sans-serif;
+  padding: 5px 10px;
+  background: var(--main-bg-color);
+  border: 2px solid white;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.search button {
+  font-weight: bold;
+}
+.btn:hover {
+  color: rgb(5, 5, 8);
+  border: 2px solid black;
+  background: white;
+  font-size: medium;
+  font-weight: 1100px;
+}
+.container {
+  min-height: calc(81vh);
+}
+.slider {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 12px auto 18px auto;
+  width: 80vw;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+}
+
+.slider img {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: auto;
+  width: 80vw;
+  align-items: center;
+}
+.error {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  display: flex;
+}
+.error img {
+  margin: auto;
+  width: 80vw;
+  height: 80vh;
+  align-items: center;
+}
+footer {
+  height: 12vh;
+  background: var(--main-bg-color);
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin-top: auto;
+}
+
+.card {
+  max-width: 91vw;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.card h2 {
+  font-family: "Lato", sans-serif;
+  display: block;
+  padding: 0px 0px;
+}
+.my-2 {
+  margin: 12px 34px;
+}
+.my-1 {
+  margin: 5px 0px;
+}
+.text-center {
+  text-align: center;
+}
+.card-item {
+  /* display: inline-flex; */
+  width: 10.5vw;
+  text-align: center;
+  margin: 0px 34px;
+  cursor: pointer;
+}
+.card-item :hover {
+  width: 11vw;
+}
+.cards {
+  margin: 13px 68px;
+  background: rgb(247, 244, 240);
+  overflow: hidden;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(-177vw);
+  }
+  100% {
+    transform: translateX(-80vw);
+  }
+}
+@keyframes slide3 {
+  0% {
+    transform: translateX(vw);
+  }
+  100% {
+    transform: translateX(vw);
+  }
+}
+.img1 {
+  display: block;
+  margin: auto;
+  transform: translateX(-12vw);
+  animation: slide1 4s 2s infinite forwards;
+}
+.img2 {
+  display: block;
+  margin: auto;
+  transform: translateX(0vw);
+  animation: slide2 4s 2s infinite forwards;
+}
+.img3 {
+  display: block;
+  margin: auto;
+  transform: translateX(12vw);
+  animation: slide3 4s 2s infinite forwards;
+}
+
+/* .btn{
+    font-family: 'Lato', sans-serif;
+    padding: 5px 10px;
+background: var(--main-bg-color);
+border: 2px solid white;
+border-radius: 7px;
+color: white;
+cursor: pointer;
+font-weight: bold;
+}
+.search button{
+    font-weight: bold;
+}
+.btn:hover{
+    color: rgb(5, 5, 8);
+    border: 2px solid black;
+    background: white;
+    font-size: medium;
+    font-weight: 1100px;
+    
+}
+*/
+.btn2 {
+  margin: 14px 0px 0px 38px;
+  width: 125px;
+  height: 33px;
+  font-size: 16px;
+  align-items: center;
+  justify-items: center;
+  color: #2874f0;
+  border-radius: 0px;
+  /* font-family: 'Lato', sans-serif; */
+}
