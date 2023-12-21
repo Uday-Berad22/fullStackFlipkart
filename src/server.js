@@ -43,6 +43,6 @@ app.get("*", (req, res) => {
 });
 
 //server on
-app.listen(3000, () => {
-  console.log("Listening on port number 3000");
+app.listen(port, () => {
+  console.log("Listening on port number 8000");
 });
