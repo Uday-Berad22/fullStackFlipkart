@@ -257,3 +257,11 @@ font-weight: bold;
   border-radius: 0px;
   /* font-family: 'Lato', sans-serif; */
 }
+.btn2:hover {
+  color: rgb(5, 5, 8);
+  border: 2px solid black;
+  background: white;
+  font-size: medium;
+  font-weight: 1100px;
+  cursor: pointer;
+}

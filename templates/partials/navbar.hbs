@@ -13,7 +13,16 @@
       <button class="btn">Search</button>
     </div>
     <div class="login">
-      <button class="btn2">Login</button>
+      <a href="login">
+        <button class="btn2">
+          {{#if status}}
+            {{status}}
+          {{else}}
+            Login
+          {{/if}}
+        </button>
+      </a>
+
     </div>
   </nav>
 </header>
