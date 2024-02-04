@@ -265,3 +265,28 @@ font-weight: bold;
   font-weight: 1100px;
   cursor: pointer;
 }
+.btn33 {
+  margin: 10px 0px 0px 38px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  align-items: center;
+  justify-items: center;
+  color: #2874f0;
+  border-radius: 0px;
+}
+.btn33:hover {
+  color: rgb(5, 5, 8);
+  border: 2px solid black;
+  background: white;
+  font-size: medium;
+  font-weight: 1100px;
+  cursor: pointer;
+}
+.cart img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 2px;
+  z-index: -1;
+  /* margin: 14px 0px 0px 38px; */
+}

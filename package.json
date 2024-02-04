@@ -46,6 +46,8 @@
     "mime-db": "^1.52.0",
     "mime-types": "^2.1.35",
     "minimist": "^1.2.8",
+    "mongodb": "^6.3.0",
+    "moongose": "^1.0.0",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
     "neo-async": "^2.6.2",
@@ -74,13 +76,16 @@
     "unpipe": "^1.0.0",
     "util": "^0.10.4",
     "utils-merge": "^1.0.1",
+    "validator": "^13.11.0",
+    "validators": "^0.3.1",
     "vary": "^1.1.2",
     "walk": "^2.3.15",
     "wordwrap": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js -e js,hbs,css"
+    "start": "node src/server.js -e js,hbs,css",
+    "dev": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC"
